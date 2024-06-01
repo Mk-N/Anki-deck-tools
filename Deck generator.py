@@ -26,7 +26,7 @@ def create_anki_decks(file_path):
     return deck_hierarchy
 
 if __name__ == "__main__":
-    # run code in powershell in same directory as script as: python "Deck generator.py"
+    # run code in powershell in same directory as script in the most simple implementationas: python "Deck generator.py"
     # Default file paths
     input_file_path = 'raw deck names.txt'
     output_file_path = 'anki decks and subdeck names.txt'
