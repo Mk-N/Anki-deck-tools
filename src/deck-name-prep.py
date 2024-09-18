@@ -18,7 +18,10 @@ def process_text(input_path):
     # Step 4: Merge subheading number and deck name
     text = re.sub(r"([0-9]+)\n([a-zA-Z].*)", r"\1 \1 - \2", text)
 
-    # Step 5: Remove any newlines at the end of the text
+    # Step 5: Replace first space with tab
+    text = re.sub(r"\s", "\t", text, count=1)
+
+    # Step 6: Remove any newlines at the end of the text
     text = text.rstrip("\n")
     return text
 
